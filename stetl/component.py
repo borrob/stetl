@@ -122,7 +122,7 @@ class Component(object):
         self.next = None
         self.section = section
         self._max_time = -1
-        self._min_time = sys.maxint
+        self._min_time = sys.maxsize
         self._total_time = 0
         self._invoke_count = 0
 
