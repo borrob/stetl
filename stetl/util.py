@@ -339,7 +339,7 @@ class Util:
                           ]
                }
 
-            print xpath_get(foo, "/morefoo/0/morebar/bacon")
+            print (xpath_get(foo, "/morefoo/0/morebar/bacon"))
 
         :param mydict: a nested dict
         :param path: path to member

@@ -64,7 +64,7 @@ def print_config_attrs(clazz):
     """Print documentation for Attr object"""
 
     module_name, _, class_name = clazz.__name__.rpartition('.')
-    # print 'From class: %s' % class_name
+    # print ('From class: %s' % class_name)
 
     attr_count = 0
     for member in clazz.__dict__.keys():
@@ -94,7 +94,7 @@ def print_classes(package):
         for name, data in inspect.getmembers(modname, inspect.isclass):
             if name == '__builtins__':
                 continue
-            print name, data
+            print (name, data)
 
 
 # DEPRECATED, now using @Config which also documents with Sphinx
