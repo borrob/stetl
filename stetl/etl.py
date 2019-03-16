@@ -7,7 +7,7 @@
 import os
 import re
 import sys
-from configparser import ConfigParser
+from configparser import ConfigParser, ExtendedInterpolation
 import version
 from io import StringIO
 from util import Util
@@ -47,7 +47,7 @@ class ETL:
         ETL.CONFIG_DIR = os.path.dirname(os.path.abspath(config_file))
         log.info("Config/working dir = %s" % ETL.CONFIG_DIR)
 
-        self.configdict = ConfigParser()
+        self.configdict = ConfigParser(interpolation=ExtendedInterpolation())
 
         sys.path.append(ETL.CONFIG_DIR)
 
@@ -103,7 +103,7 @@ class ETL:
             config_buf = StringIO(config_str)
 
             # Parse config from file buffer
-            self.configdict.readfp(config_buf, config_file)
+            self.configdict.read_file(config_buf, config_file)
         except Exception as e:
             log.error("Error populating config dict from config string: err=%s" % str(e))
             raise e

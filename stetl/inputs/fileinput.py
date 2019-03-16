@@ -204,7 +204,7 @@ class XmlElementStreamerFileInput(FileInput):
 
             # Files available: pop next file
             self.cur_file_path = self.file_list.pop(0)
-            fd = open(self.cur_file_path)
+            fd = open(self.cur_file_path, 'rb')
             self.elem_count = 0
             log.info("file opened : %s" % self.cur_file_path)
             self.context = etree.iterparse(fd, events=("start", "end"))
