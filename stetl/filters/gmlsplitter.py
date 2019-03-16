@@ -129,7 +129,7 @@ class GmlSplitter(Filter):
             # print '[' + self.buffer.getvalue() + ']'
             packet.data = etree.parse(self.buffer, self.xml_parser)
         # print buffer.getvalue()
-        except Exception, e:
+        except Exception as e:
             bufStr = self.buffer.getvalue()
             if not bufStr:
                 log.info("parse buffer empty: content=[%s]" % bufStr)

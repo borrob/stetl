@@ -112,7 +112,7 @@ def print_doc(class_name):
         # print ('\nConfiguration attributes: \n')
         # print_config_attrs(class_obj)
 
-    except Exception, e:
+    except Exception as e:
         log.error("cannot print info class named '%s' e=%s - you made a typo?" % (class_name, str(e)))
         raise e
 
