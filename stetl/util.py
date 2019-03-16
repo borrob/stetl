@@ -10,7 +10,7 @@ import os
 import re
 import types
 from time import time
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(name)s %(levelname)s %(message)s')

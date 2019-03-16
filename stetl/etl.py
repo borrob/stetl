@@ -7,7 +7,7 @@
 import os
 import re
 import sys
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 import version
 from util import Util
 from chain import Chain
