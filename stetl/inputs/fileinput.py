@@ -209,10 +209,10 @@ class XmlElementStreamerFileInput(FileInput):
             log.info("file opened : %s" % self.cur_file_path)
             self.context = etree.iterparse(fd, events=("start", "end"))
             self.context = iter(self.context)
-            event, self.root = self.context.next()
+            event, self.root = next(self.context)
 
         try:
-            event, elem = self.context.next()
+            event, elem = next(self.context)
         except (etree.XMLSyntaxError, StopIteration):
             # workaround for etree.XMLSyntaxError https://bugs.launchpad.net/lxml/+bug/1185701
             self.context = None
@@ -373,11 +373,11 @@ class CsvFileInput(FileInput):
 
     def read(self, packet):
         try:
-            packet.data = self.csv_reader.next()
+            packet.data = next(self.csv_reader)
             if self._output_format == FORMAT.record_array:
                 while True:
                     self.arr.append(packet.data)
-                    packet.data = self.csv_reader.next()
+                    packet.data = next(self.csv_reader)
 
             log.info("CSV row nr %d read: %s" % (self.csv_reader.line_num - 1, packet.data))
         except Exception:
