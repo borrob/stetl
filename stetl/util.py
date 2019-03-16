@@ -9,6 +9,7 @@ import logging
 import os
 import re
 import types
+from io import StringIO
 from time import time
 from configparser import ConfigParser
 
@@ -380,15 +381,6 @@ class Util:
 log = Util.get_log("util")
 
 # Try several imports, centralized to give warnings once
-try:
-    from cStringIO import StringIO
-
-    log.info("Found cStringIO, good!")
-except Exception:
-    from StringIO import StringIO
-
-    log.warning("Found %s - this is suboptimal, try cStringIO" % str(type(StringIO)))
-
 try:
     from lxml import etree
 
