@@ -64,7 +64,7 @@ class XmlElementReader(Filter):
 
         if self.context is None:
             # Open file
-            fd = open(self.cur_file_path)
+            fd = open(self.cur_file_path, 'rb')
             self.elem_count = 0
             log.info("file opened : %s" % self.cur_file_path)
             self.context = etree.iterparse(fd, events=("start", "end"))
