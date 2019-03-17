@@ -35,4 +35,5 @@ class RegexFilterTest(StetlTestCase):
         buffer_filter = chain.get_by_class(PacketBuffer)
         packet_list = buffer_filter.packet_list
 
-        self.assertEqual(str(packet_list[0].data), "{'elemtype': 'BuildingInstallation', 'featurecount': '1162'}")
+        self.assertEqual(packet_list[0].data.get('elemtype'), "BuildingInstallation")
+        self.assertEqual(int(packet_list[0].data.get('featurecount')), 1162)
