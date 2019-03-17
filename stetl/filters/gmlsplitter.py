@@ -133,7 +133,7 @@ class GmlSplitter(Filter):
                 log.info("parse buffer empty: content=[%s]" % bufStr)
             else:
                 log.error("error in buffer parsing %s" % str(e))
-                print (bufStr)
+                print(bufStr)
                 raise
         self.buffer.close()
         self.buffer = None

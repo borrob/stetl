@@ -70,16 +70,16 @@ def print_config_attrs(clazz):
     for member in clazz.__dict__.keys():
         if member.startswith('cfg_'):
             config_obj = clazz.__dict__[member]
-            print ('----------------------------------------------')
-            print ('NAME: %s' % member.replace('cfg_', ''))
-            print ('MANDATORY: %s' % config_obj.mandatory)
-            print ('TYPE: %s' % str(config_obj.type))
-            print ('\n%s' % config_obj.doc)
-            print ('\nDEFAULT: %s' % str(config_obj.default))
+            print('----------------------------------------------')
+            print('NAME: %s' % member.replace('cfg_', ''))
+            print('MANDATORY: %s' % config_obj.mandatory)
+            print('TYPE: %s' % str(config_obj.type))
+            print('\n%s' % config_obj.doc)
+            print('\nDEFAULT: %s' % str(config_obj.default))
             attr_count += 1
 
     if attr_count == 0:
-        print ('No config attributes or class not yet documented')
+        print('No config attributes or class not yet documented')
 
 
 def print_classes(package):
@@ -94,7 +94,7 @@ def print_classes(package):
         for name, data in inspect.getmembers(modname, inspect.isclass):
             if name == '__builtins__':
                 continue
-            print (name, data)
+            print(name, data)
 
 
 # DEPRECATED, now using @Config which also documents with Sphinx
@@ -106,10 +106,10 @@ def print_doc(class_name):
     try:
         # class object from module.class name
         class_obj = factory.class_forname(class_name)
-        print ('DOCUMENTATION\n')
-        print ('CLASS: %s' % class_name)
-        print (class_obj.__doc__)
-        # print ('\nConfiguration attributes: \n')
+        print('DOCUMENTATION\n')
+        print('CLASS: %s' % class_name)
+        print(class_obj.__doc__)
+        # print('\nConfiguration attributes: \n')
         # print_config_attrs(class_obj)
 
     except Exception as e:
