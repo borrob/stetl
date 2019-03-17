@@ -417,7 +417,7 @@ class JsonFileInput(FileInput):
                 from urllib.request import urlopen
 
                 fp = urlopen(file_path)
-                file_data = json.loads(fp.read())
+                file_data = json.loads(fp.read().decode('utf-8'))
             else:
                 with open(file_path) as data_file:
                     file_data = json.load(data_file)

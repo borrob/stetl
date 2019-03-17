@@ -206,7 +206,7 @@ class Jinja2TemplatingFilter(TemplatingFilter):
                         from urllib.request import urlopen
 
                         fp = urlopen(file_path)
-                        globals_struct = json.loads(fp.read())
+                        globals_struct = json.loads(fp.read().decode('utf-8'))
                     else:
                         with open(file_path) as data_file:
                             globals_struct = json.load(data_file)
