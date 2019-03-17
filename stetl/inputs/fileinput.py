@@ -307,7 +307,11 @@ class LineStreamerFileInput(FileInput):
 
             return packet
 
-        line = line.decode('utf-8')
+        try:
+            line = line.decode('utf-8')
+        except AttributeError:
+            # no need to decode
+            pass
         packet.data = self.process_line(line)
 
         return packet
