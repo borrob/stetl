@@ -258,6 +258,8 @@ class Util:
 
                 # Create OGR Geometry object from GML string
                 value = etree.tostring(subelem)
+                if type(value) == bytes:
+                    value = value.decode('utf-8')
                 from osgeo import ogr
                 geom = ogr.CreateGeometryFromGML(value)
 
