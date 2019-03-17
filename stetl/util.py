@@ -142,6 +142,12 @@ class Util:
                 self.fp = fp
                 self.sechead = '[asection]\n'
 
+            def __iter__(self):
+                return self
+
+            def __next__(self):
+                return self.readline()
+
             def readline(self):
                 if self.sechead:
                     try:
@@ -149,7 +155,11 @@ class Util:
                     finally:
                         self.sechead = None
                 else:
-                    return self.fp.readline()
+                    line = self.fp.readline()
+                    if line:
+                        return line
+                    else:
+                        raise StopIteration
 
         cp = ConfigParser()
         cp.readfp(FakeSecHead(open(file_path)))
