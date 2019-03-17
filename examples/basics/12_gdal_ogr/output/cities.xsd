@@ -22,49 +22,7 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="STATUS" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ObjectID" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="POP_RANK" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="GMI_ADMIN" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="CNTRY_NAME" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ADMIN_NAME" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="LABEL_FLAG" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="CITY_NAME" nillable="true" minOccurs="0" maxOccurs="1">
+        <xs:element name="FIPS_CNTRY" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:simpleType>
             <xs:restriction base="xs:string">
             </xs:restriction>
@@ -76,19 +34,61 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="PORT_ID" nillable="true" minOccurs="0" maxOccurs="1">
+        <xs:element name="GMI_ADMIN" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:simpleType>
             <xs:restriction base="xs:string">
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="FIPS_CNTRY" nillable="true" minOccurs="0" maxOccurs="1">
+        <xs:element name="STATUS" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="LABEL_FLAG" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ADMIN_NAME" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ObjectID" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="CITY_NAME" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="POP_RANK" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:simpleType>
             <xs:restriction base="xs:string">
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
         <xs:element name="bbox" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="PORT_ID" nillable="true" minOccurs="0" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="CNTRY_NAME" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:simpleType>
             <xs:restriction base="xs:string">
             </xs:restriction>
