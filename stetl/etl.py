@@ -8,10 +8,10 @@ import os
 import re
 import sys
 from configparser import ConfigParser, ExtendedInterpolation
-import version
 from io import StringIO
-from util import Util
-from chain import Chain
+from . import version
+from .util import Util
+from .chain import Chain
 
 log = Util.get_log('ETL')
 

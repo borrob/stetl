@@ -7,8 +7,8 @@
 import os
 import sys
 from time import time
-from util import Util, ConfigSection
-from packet import FORMAT
+from .util import Util, ConfigSection
+from .packet import FORMAT
 
 log = Util.get_log('component')
 

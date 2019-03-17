@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from util import Util
+from .util import Util
 
 log = Util.get_log('factory')
 

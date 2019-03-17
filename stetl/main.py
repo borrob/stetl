@@ -5,14 +5,15 @@
 #
 # Author: Just van den Broecke
 #
-from etl import ETL
-from factory import factory
-from util import Util
-from version import __version__
 import argparse
 import inspect
 import os
 import sys
+
+from stetl.etl import ETL
+from stetl.factory import factory
+from stetl.util import Util
+from stetl.version import __version__
 
 log = Util.get_log('main')
 

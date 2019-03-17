@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Author: Just van den Broecke
 #
-from component import Component
+from .component import Component
 
 
 class Filter(Component):
