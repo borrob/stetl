@@ -54,7 +54,10 @@ class Packet:
         elif self.format == FORMAT.ogr_feature:
             s = self.data.ExportToJson()
         else:
-            s = str(self.data).decode('utf-8')
+            try:
+                s = str(self.data).decode('utf-8')
+            except AttributeError:
+                s = str(self.data)
         return s
 
 
