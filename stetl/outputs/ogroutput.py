@@ -8,6 +8,7 @@
 import subprocess
 import os
 import shutil
+
 from stetl.component import Config
 from stetl.output import Output
 from stetl.util import Util, gdal, ogr, osr

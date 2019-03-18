@@ -4,12 +4,12 @@
 #
 # Author: Just van den Broecke
 #
+import os
+
 from stetl.output import Output
 from stetl.util import Util
 from stetl.packet import FORMAT
 from stetl.component import Config
-
-import os
 
 log = Util.get_log('fileoutput')
 

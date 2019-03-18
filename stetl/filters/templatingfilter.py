@@ -8,13 +8,13 @@
 # The output is a string passed to the next Filter or Output.
 #
 # Author:Just van den Broecke
+import os
 
 from stetl.util import Util, ogr, osr
 from stetl.component import Config
 from stetl.filter import Filter
 from stetl.packet import FORMAT
 from string import Template
-import os
 
 log = Util.get_log("templatingfilter")
 

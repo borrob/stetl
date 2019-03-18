@@ -4,8 +4,8 @@
 #
 # Author: Just van den Broecke
 #
-from .util import etree
 import json
+from .util import etree
 
 
 class Packet:

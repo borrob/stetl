@@ -6,11 +6,11 @@
 #
 # Author:Just van den Broecke
 
+import json
 from stetl.component import Config
 from stetl.util import Util, etree
 from stetl.filter import Filter
 from stetl.packet import FORMAT
-import json
 
 log = Util.get_log("formatconverter")
 

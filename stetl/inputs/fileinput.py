@@ -4,14 +4,15 @@
 #
 # Author: Just van den Broecke
 #
+import csv
+import re
+import fnmatch
+
 from stetl.component import Config
 from stetl.input import Input
 from stetl.util import Util, etree
 from stetl.utils.apachelog import formats, parser
 from stetl.packet import FORMAT
-import csv
-import re
-import fnmatch
 
 log = Util.get_log('fileinput')
 
