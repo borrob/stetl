@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Writes the payload of a packet as a string to a file.
 # Based on outputs.fileoutput.FileOutput.
 #

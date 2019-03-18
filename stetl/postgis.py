@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # PostGIS support wrapper.
 #
 # Author: Just van den Broecke

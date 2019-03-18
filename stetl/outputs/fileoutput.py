@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Output to File classes.
 #
 # Author: Just van den Broecke

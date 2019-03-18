@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # Extracts data from a string using a regular expression and generates a record.
 #

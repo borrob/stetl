@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Reads an XML file and returns XML elements.
 # Based on inputs.fileinput.XmlElementStreamFileInput.
 #

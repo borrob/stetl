@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Merger Component base class for ETL.
 #
 # Author: Just van den Broecke

@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # Output Components for deegree server storage (www.deegree.org).
 #

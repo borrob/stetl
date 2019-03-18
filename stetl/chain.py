@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Chain class: holds pipeline of components.
 #
 # Author: Just van den Broecke

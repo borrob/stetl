@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Input classes for ETL.
 #
 # Author: Just van den Broecke

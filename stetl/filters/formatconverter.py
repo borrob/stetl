@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # Converts Stetl Packet FORMATs. This can be used to connect
 # Stetl components with different output/input formats.

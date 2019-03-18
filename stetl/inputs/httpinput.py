@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Input classes for fetching data via HTTP.
 #
 # Author: Just van den Broecke

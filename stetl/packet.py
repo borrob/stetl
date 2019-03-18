@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Unit of data streamed through ETL chain.
 #
 # Author: Just van den Broecke

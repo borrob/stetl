@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Component base class for ETL.
 #
 # Author: Just van den Broecke

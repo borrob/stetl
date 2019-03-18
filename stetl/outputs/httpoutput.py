@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # Base classes for HTTP output like WFS-T and SOS-T or any other HTTP writing service.
 #

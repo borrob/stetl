@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # POST data via WFS Transactional protocol (WFS-T).
 #

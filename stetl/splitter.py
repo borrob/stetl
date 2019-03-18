@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Splitter Component base class for ETL.
 #
 # Author: Just van den Broecke

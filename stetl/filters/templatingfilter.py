@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #
 # Transformation of any input using Python Templating as
 # meant in: https://wiki.python.org/moin/Templating.

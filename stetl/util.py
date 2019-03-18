@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Utility functions and classes.
 #
 # Author:Just van den Broecke

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Author: Just van den Broecke
 #
 from .component import Component

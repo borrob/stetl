@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Main ETL program.
 #
 # Author: Just van den Broecke

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from .util import Util
 
 log = Util.get_log('factory')

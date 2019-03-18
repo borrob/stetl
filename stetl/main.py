@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
 # Main Stetl program.
 #
 # Author: Just van den Broecke
