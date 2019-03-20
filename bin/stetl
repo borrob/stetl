@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
 # Main Stetl program.
 #
 # Author: Just van den Broecke
@@ -31,8 +29,6 @@ def main():
         etl = ETL(vars(args), args.config_args)
         etl.run()
 
-    # elif args.doc_args:
-    #     print_doc(args.doc_args)
     else:
         print('Try stetl -h for help')
 
