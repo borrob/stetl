@@ -1,125 +1,125 @@
 {
+    "type": "FeatureCollection",
     "features": [
         {
+            "type": "feature",
+            "properties": {
+                "ObjectID": "12386304",
+                "CITY_NAME": "Haarlem",
+                "GMI_ADMIN": "NLD-NHL",
+                "ADMIN_NAME": "Noord-Holland",
+                "FIPS_CNTRY": "NL",
+                "CNTRY_NAME": "Netherlands",
+                "STATUS": "Provincial capital",
+                "POP_RANK": "5",
+                "POP_CLASS": "100,000 to 250,000",
+                "PORT_ID": "0",
+                "LABEL_FLAG": "0"
+            },
+            "id": "cities.1358",
             "geometry": {
+                "type": "Point",
                 "coordinates": [
                     4.632,
                     52.387
-                ],
-                "type": "Point"
-            },
-            "type": "feature",
-            "id": "cities.1358",
-            "properties": {
-                "POP_CLASS": "100,000 to 250,000",
-                "CNTRY_NAME": "Netherlands",
-                "ADMIN_NAME": "Noord-Holland",
-                "FIPS_CNTRY": "NL",
-                "POP_RANK": "5",
-                "ObjectID": "12386304",
-                "LABEL_FLAG": "0",
-                "PORT_ID": "0",
-                "CITY_NAME": "Haarlem",
-                "STATUS": "Provincial capital",
-                "GMI_ADMIN": "NLD-NHL"
+                ]
             }
         },
         {
+            "type": "feature",
+            "properties": {
+                "ObjectID": "12386305",
+                "CITY_NAME": "Amsterdam",
+                "GMI_ADMIN": "NLD-NHL",
+                "ADMIN_NAME": "Noord-Holland",
+                "FIPS_CNTRY": "NL",
+                "CNTRY_NAME": "Netherlands",
+                "STATUS": "National capital",
+                "POP_RANK": "3",
+                "POP_CLASS": "500,000 to 1,000,000",
+                "PORT_ID": "31060",
+                "LABEL_FLAG": "0"
+            },
+            "id": "cities.1359",
             "geometry": {
+                "type": "Point",
                 "coordinates": [
                     4.89483636,
                     52.37304545
-                ],
-                "type": "Point"
-            },
-            "type": "feature",
-            "id": "cities.1359",
-            "properties": {
-                "POP_CLASS": "500,000 to 1,000,000",
-                "CNTRY_NAME": "Netherlands",
-                "ADMIN_NAME": "Noord-Holland",
-                "FIPS_CNTRY": "NL",
-                "POP_RANK": "3",
-                "ObjectID": "12386305",
-                "LABEL_FLAG": "0",
-                "PORT_ID": "31060",
-                "CITY_NAME": "Amsterdam",
-                "STATUS": "National capital",
-                "GMI_ADMIN": "NLD-NHL"
+                ]
             }
         },
         {
+            "type": "feature",
+            "properties": {
+                "ObjectID": "12386306",
+                "CITY_NAME": "Utrecht",
+                "GMI_ADMIN": "NLD-UTR",
+                "ADMIN_NAME": "Utrecht",
+                "FIPS_CNTRY": "NL",
+                "CNTRY_NAME": "Netherlands",
+                "STATUS": "Provincial capital",
+                "POP_RANK": "5",
+                "POP_CLASS": "100,000 to 250,000",
+                "PORT_ID": "0",
+                "LABEL_FLAG": "1"
+            },
+            "id": "cities.1360",
             "geometry": {
+                "type": "Point",
                 "coordinates": [
                     5.112,
                     52.1
-                ],
-                "type": "Point"
-            },
-            "type": "feature",
-            "id": "cities.1360",
-            "properties": {
-                "POP_CLASS": "100,000 to 250,000",
-                "CNTRY_NAME": "Netherlands",
-                "ADMIN_NAME": "Utrecht",
-                "FIPS_CNTRY": "NL",
-                "POP_RANK": "5",
-                "ObjectID": "12386306",
-                "LABEL_FLAG": "1",
-                "PORT_ID": "0",
-                "CITY_NAME": "Utrecht",
-                "STATUS": "Provincial capital",
-                "GMI_ADMIN": "NLD-UTR"
+                ]
             }
         },
         {
+            "type": "feature",
+            "properties": {
+                "ObjectID": "12386307",
+                "CITY_NAME": "The Hague",
+                "GMI_ADMIN": "NLD-ZHL",
+                "ADMIN_NAME": "Zuid-Holland",
+                "FIPS_CNTRY": "NL",
+                "CNTRY_NAME": "Netherlands",
+                "STATUS": "Provincial capital",
+                "POP_RANK": "4",
+                "POP_CLASS": "250,000 to 500,000",
+                "PORT_ID": "0",
+                "LABEL_FLAG": "0"
+            },
+            "id": "cities.1361",
             "geometry": {
+                "type": "Point",
                 "coordinates": [
                     4.281,
                     52.076
-                ],
-                "type": "Point"
-            },
-            "type": "feature",
-            "id": "cities.1361",
-            "properties": {
-                "POP_CLASS": "250,000 to 500,000",
-                "CNTRY_NAME": "Netherlands",
-                "ADMIN_NAME": "Zuid-Holland",
-                "FIPS_CNTRY": "NL",
-                "POP_RANK": "4",
-                "ObjectID": "12386307",
-                "LABEL_FLAG": "0",
-                "PORT_ID": "0",
-                "CITY_NAME": "The Hague",
-                "STATUS": "Provincial capital",
-                "GMI_ADMIN": "NLD-ZHL"
+                ]
             }
         },
         {
+            "type": "feature",
+            "properties": {
+                "ObjectID": "12386308",
+                "CITY_NAME": "Rotterdam",
+                "GMI_ADMIN": "NLD-ZHL",
+                "ADMIN_NAME": "Zuid-Holland",
+                "FIPS_CNTRY": "NL",
+                "CNTRY_NAME": "Netherlands",
+                "STATUS": "Other",
+                "POP_RANK": "2",
+                "POP_CLASS": "1,000,000 to 5,000,000",
+                "PORT_ID": "31140",
+                "LABEL_FLAG": "0"
+            },
+            "id": "cities.1362",
             "geometry": {
+                "type": "Point",
                 "coordinates": [
                     4.48515455,
                     51.92559091
-                ],
-                "type": "Point"
-            },
-            "type": "feature",
-            "id": "cities.1362",
-            "properties": {
-                "POP_CLASS": "1,000,000 to 5,000,000",
-                "CNTRY_NAME": "Netherlands",
-                "ADMIN_NAME": "Zuid-Holland",
-                "FIPS_CNTRY": "NL",
-                "POP_RANK": "2",
-                "ObjectID": "12386308",
-                "LABEL_FLAG": "0",
-                "PORT_ID": "31140",
-                "CITY_NAME": "Rotterdam",
-                "STATUS": "Other",
-                "GMI_ADMIN": "NLD-ZHL"
+                ]
             }
         }
-    ],
-    "type": "FeatureCollection"
+    ]
 }
