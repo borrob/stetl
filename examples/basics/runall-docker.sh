@@ -9,10 +9,8 @@ for DIR_NAME in `echo [0-9]*`; do
 	
 	echo "==== running etl.sh for example ${DIR_NAME} ===="
 
-	# for mounting into Docker image
-	export WORK_DIR=$(pwd)
-
-	BASE_CMD="docker run -v ${WORK_DIR}:${WORK_DIR} -w ${WORK_DIR} geopython/stetl:2.0 stetl -c etl.cfg"
+	# Run with current dir mounted as work dir
+	BASE_CMD="docker run --rm -v $(pwd):/work -w /work geopython/stetl:2.0 stetl -c etl.cfg"
 
 	# Only exception is 6_cmdargs which has several
 	# extended stetl -a commandlines

@@ -206,6 +206,9 @@ For example within the current directory you may have an ``etl.cfg`` Stetl file:
 	WORK_DIR=`pwd`
 	sudo docker run -v ${WORK_DIR}:${WORK_DIR} -w ${WORK_DIR} geopython/stetl:latest stetl -c etl.cfg
 
+	# or leaner
+	sudo docker run --rm -v $(pwd):/work -w /work geopython/stetl:latest stetl -c etl.cfg
+
 A more advanced setup would be (network-)linking to a PostGIS Docker image
 like `kartoza/postgis <https://hub.docker.com/r/kartoza/postgis/>`_: ::
 
