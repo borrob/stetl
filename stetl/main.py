@@ -8,6 +8,8 @@ import inspect
 import os
 import sys
 
+from deprecated.sphinx import deprecated
+
 from stetl.etl import ETL
 from stetl.factory import factory
 from stetl.util import Util
@@ -52,7 +54,7 @@ def parse_args(args_list):
     return args
 
 
-# DEPRECATED, now using @Config which also documents with Sphinx
+@deprecated(version='1.0.7', reason='now using @Config which also documents with Spinx.')
 def print_config_attrs(clazz):
     skip = ['Filter', 'Input', 'Output', 'Component']
     for base in clazz.__bases__:
@@ -96,7 +98,7 @@ def print_classes(package):
             print(name, data)
 
 
-# DEPRECATED, now using @Config which also documents with Sphinx
+@deprecated(version='1.0.7', reason='now using @Config which also documents with Spinx.')
 def print_doc(class_name):
     """Print documentation for class in particular config options"""
     # print_classes(class_name)

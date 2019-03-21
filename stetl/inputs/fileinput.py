@@ -6,6 +6,8 @@ import csv
 import re
 import fnmatch
 
+from deprecated.sphinx import deprecated
+
 from stetl.component import Config
 from stetl.input import Input
 from stetl.util import Util, etree
@@ -322,11 +324,11 @@ class LineStreamerFileInput(FileInput):
         return line
 
 
+@deprecated(version='1.0.9', reason='Better to use XmlElementStreamerFileInput for GML features')
 class XmlLineStreamerFileInput(LineStreamerFileInput):
     """
     DEPRECATED Streams lines from an XML file(s)
     NB assumed is that lines in the file have newlines !!
-    DEPRECATED better is to use XmlElementStreamerFileInput for GML features.
 
     produces=FORMAT.xml_line_stream
     """

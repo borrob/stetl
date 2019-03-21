@@ -5,6 +5,7 @@
 # Author: Just van den Broecke
 #
 import codecs
+from deprecated.sphinx import deprecated
 from stetl.util import Util, etree, StringIO
 from stetl.filter import Filter
 from stetl.packet import FORMAT
@@ -12,10 +13,10 @@ from stetl.packet import FORMAT
 log = Util.get_log('gmlsplitter')
 
 
+@deprecated(version='1.0.4', reason='Use the more robust XmlElementStreamerFileInput + XmlAssembler instead!!!')
 class GmlSplitter(Filter):
     """
     Split a stream of text XML lines into documents
-    DEPRECATED: use the more robust XmlElementStreamerFileInput+XmlAssembler instead!!!
     TODO phase out
 
     consumes=FORMAT.xml_line_stream, produces=FORMAT.etree_doc
