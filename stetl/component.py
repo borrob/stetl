@@ -11,7 +11,7 @@ from .packet import FORMAT
 log = Util.get_log('component')
 
 
-class Config(object):
+class Config:
     """
     Decorator class to tie config values from the .ini file to object instance
     property values. Somewhat like the Python standard @property but with
@@ -91,7 +91,7 @@ class Config(object):
         return comp_inst.cfg_vals[self.property_name]
 
 
-class Component(object):
+class Component:
     """
     Abstract Base class for all Input, Filter and Output Components.
 

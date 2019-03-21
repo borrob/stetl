@@ -134,7 +134,7 @@ class Util:
     def propsfile_to_dict(file_path):
         # See http://stackoverflow.com/questions/2819696/parsing-properties-file-in-python
         # Need a [section] header to parse .ini files, so fake it!
-        class FakeSecHead(object):
+        class FakeSecHead:
             def __init__(self, fp):
                 self.fp = fp
                 self.sechead = '[asection]\n'
