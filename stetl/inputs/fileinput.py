@@ -376,11 +376,13 @@ class CsvFileInput(FileInput):
 
     def read(self, packet):
         try:
-            packet.data = next(self.csv_reader)
+            # To comply with Stetl record type: force ordinary/base dict-type.
+            # Python 3.6+ returns OrderedDict which may not play nice up the Chain
+            packet.data = dict(next(self.csv_reader))
             if self._output_format == FORMAT.record_array:
                 while True:
                     self.arr.append(packet.data)
-                    packet.data = next(self.csv_reader)
+                    packet.data = dict(next(self.csv_reader))
 
             log.info("CSV row nr %d read: %s" % (self.csv_reader.line_num - 1, packet.data))
         except Exception:

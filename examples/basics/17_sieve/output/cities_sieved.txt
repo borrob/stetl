@@ -1,1 +1,1 @@
-[OrderedDict([('city', 'amsterdam'), ('lat', '52.4'), ('lon', '4.9')]), OrderedDict([('city', 'otterlo'), ('lat', '52.101'), ('lon', '5.773')])]
+[{'city': 'amsterdam', 'lat': '52.4', 'lon': '4.9'}, {'city': 'otterlo', 'lat': '52.101', 'lon': '5.773'}]
