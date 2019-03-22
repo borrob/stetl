@@ -38,7 +38,7 @@ def parse_args(args_list):
                            dest='doc_args', required=False)
 
     argparser.add_argument('-v', '--version',
-                           action='store_true' ,
+                           action='store_true',
                            help='Show current version of stetl and exit',
                            required=False)
 

@@ -17,9 +17,9 @@ class StetlTestCase(unittest.TestCase):
         self._old_get_log = Util.get_log
         
         @staticmethod
-        def get_log_new(name):
+        def get_log_new(name, level=logging.WARN):
             log = logging.getLogger(name)
-            log.setLevel(logging.WARN)
+            log.setLevel(level)
             return log
             
         Util.get_log = get_log_new

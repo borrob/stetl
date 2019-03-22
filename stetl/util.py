@@ -52,9 +52,9 @@ class Util:
     xslt_strip_ns_doc = False
 
     @staticmethod
-    def get_log(name):
+    def get_log(name, level=logging.DEBUG):
         log = logging.getLogger(name)
-        log.setLevel(logging.DEBUG)
+        log.setLevel(level)
         return log
 
     @staticmethod
