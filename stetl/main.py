@@ -37,6 +37,11 @@ def parse_args(args_list):
                            help='Get component documentation like its configuration parameters, e.g. stetl doc stetl.inputs.fileinput.FileInput',
                            dest='doc_args', required=False)
 
+    argparser.add_argument('-v', '--version',
+                           action='store_true' ,
+                           help='Show current version of stetl and exit',
+                           required=False)
+
     args = argparser.parse_args(args_list)
 
     if args.config_args:
@@ -126,12 +131,17 @@ def main():
        -s  --section <section_name> the section in the Stetl config (ini) file to execute (default is [etl]).
        -a  --args <arglist> sero or more substitutable args for symbolic, {arg}, values in Stetl config file, in format -a arg1=foo -a arg2=bar etc.
        -d  --doc <class> Get component documentation like its configuration parameters, e.g. stetl --doc stetl.inputs.fileinput.FileInput
+       -v  --version Show the current version of stelt and exit
        -h  --help get help info
 
     """
 
     # Pass arguments explicitly, facilitates testing
     args = parse_args(sys.argv[1:])
+
+    if args.version:
+        print('Stetl version: ', __version__)
+        exit()
 
     if args.config_file:
         # Do the ETL
