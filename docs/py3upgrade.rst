@@ -22,10 +22,9 @@ to keep in mind and are worth mentioning:
 - stetl 2 supports python 3.4.2 and higher (so unfortunately no `f strings <https://www.python.org/dev/peps/pep-0498/>`_)
 - python 3 uses unicode strings, meaning encoding/decoding is a bit different
 - `stringIO` and `cstringIO` were moved around
-- slight syntax change on calling `next()` of iterators
+- slight syntax change on calling `next()` for iterators
 - update on `import` statements
-- differences in `urllib` to make http-calls (although `issue 80
-<https://github.com/geopython/stetl/issues/80>`_ might change it to the `requests` library).
+- differences in `urllib` to make http-calls (although `issue 80 <https://github.com/geopython/stetl/issues/80>`_ might change it to the `requests` library).
 
 Important changes for users
 ---------------------------
