@@ -63,7 +63,7 @@ When using the ``Jinja2`` templating filter, ``Jinja2TemplatingFilter``, see htt
 
 * Python ``Jinja2`` package
 
-* ``Deprecated`` is used to indicated deprecated functions and classes.
+``Deprecated`` is used to indicated deprecated functions and classes.
 
 Platform-specific guidelines for dependencies follow next.
 
