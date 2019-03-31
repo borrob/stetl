@@ -28,7 +28,6 @@ ENV TZ=${TIMEZONE} \
 
 # Add Source Code
 ADD . /stetl
-VOLUME /stetl
 
 # Set time right and configure timezone and locale
 RUN \
